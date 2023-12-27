@@ -1,0 +1,55 @@
+@use '../../style' as s;
+
+// main {
+// 	background: s.color(light);
+// 	color: s.color(black);
+// 	padding: s.space(10);
+	
+// }
+// a{
+// 	font-size: 16px;
+// 	color:s.color(main);
+// 	text-decoration: none;
+// 	transition: 0.7s;
+	
+// 	&:hover{
+		
+// 		opacity: 0.6;
+// 	}
+// }
+.header{
+	background-color: s.color(light);
+	padding: s.space(2);
+	display: flex;
+	
+}
+.header__block{
+	background-color: s.color(light);
+	width: 100%;
+	// max-width: 1140px;
+	padding: s.space(2) s.space(6);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: s.space(2);
+	&>.header__link{
+		display: flex;
+		gap: s.space(8);
+	}
+	&>.contact__media{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: s.space(8);
+		&>.contact{
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			gap: s.space(2);
+		}
+		&>.media{
+			display: flex;
+			gap: s.space(2);
+		}
+	}
+}

@@ -14,14 +14,14 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
+  res.render('offer', {
     // вказуємо назву контейнера
-    name: 'index',
+    name: 'offer',
     // вказуємо назву компонентів
     component: ['header', 'footer'],
 
     // вказуємо назву сторінки
-    title: 'Travel Agency',
+    title: 'Travel Agency/Offers',
     // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
 
     // вказуємо дані,

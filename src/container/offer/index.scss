@@ -1,0 +1,66 @@
+@use '../../style' as s;
+
+main {
+	
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    gap: s.space(5);
+	
+}
+a{
+	font-size: 16px;
+	color:s.color(main);
+	text-decoration: none;
+	transition: 0.7s;
+	
+	&:hover{
+		
+		opacity: 0.6;
+	}
+}
+.offer{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	padding: s.space(4);
+	gap: s.space(3);
+	border: 1px solid s.color(border);
+	border-radius: s.space(2);
+	&>.offer__card{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: s.space(3);
+		&>.card{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			&>img{
+				width: 100%;
+			}
+			&>.badge{
+				position: absolute;
+				top:-8px;
+				left:-6px;
+				padding: 8px 16px;
+			}
+			&>.card-body{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+			}
+		}
+	}
+	&>.about{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding: s.space(4);
+		gap: s.space(4);
+		border: 1px solid s.color(border);
+		border-radius: s.space(2);
+		&>.img{
+			gap: s.space(3);
+		}
+	}
+}	

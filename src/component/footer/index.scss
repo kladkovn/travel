@@ -1,0 +1,53 @@
+@use '../../style' as s;
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    padding: s.space(4) 0;
+    gap: s.space(3);
+    
+    &>.footer__link{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding: s.space(2);
+        gap: s.space(2);
+        &>.contact{
+            display: flex;
+            flex-direction: column;
+            gap: s.space(2);
+            padding: s.space(2);
+            justify-content: center;
+        }
+        &>.media{
+            display: flex;
+            gap: s.space(3);
+        }
+    }
+    &>.select{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: s.space(4);
+        gap: s.space(4);
+        border: 1px solid s.color(border);
+        border-radius: s.space(2);
+        &>input{
+            border: 1px solid s.color(border);
+            
+        }
+    }
+    &>.media__item{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: s.space(4);
+        gap: s.space(2);
+        border: 1px solid s.color(border);
+        border-radius: s.space(2);
+        &>img{
+            border: 1px solid s.color(border);
+            border-radius: s.space(2);
+        }
+    }
+}
