@@ -32,6 +32,19 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: s.space(2);
+	&>.info{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: s.space(4);
+		gap: s.space(2);
+		color: s.color(dang);
+		&>p{
+			color: green;
+			font-size: 12px;
+		}
+	}
 	&>.header__link{
 		display: flex;
 		gap: s.space(8);
